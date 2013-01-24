@@ -3886,3 +3886,33 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/testyii/index.php?r=user/li%C3%ADt
 ---
+2013/01/24 03:07:23 [error] [php] include(CGridView.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\MyGridView.php(13): spl_autoload_call()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php(314): require()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWidgetFactory.php(146): import()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(172): UserController->createWidget()
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\index.php(64): UserController->widget()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): UserController->renderFile()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): UserController->renderPartial()
+#10 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(283): UserController->render()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\MyGridView.php (13)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\index.php (64)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (283)

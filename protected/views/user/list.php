@@ -1,97 +1,66 @@
-<?php $this->pageTitle = "Quản lý người dùng";?>
-<div class="row">
-    <?=CHtml::link("Thêm người dùng", array("create"), array('class'=>'btn btn-primary', 'style'=>'margin-bottom:7px;'))?> 
-    <div class="span12">
-        <div class="widget widget-table">
-            <div class="widget-header">						
-                    <h3>
-                            <i class="icon-th-list"></i>
-                            Danh sách người dùng
-                    </h3>
-                  
-            </div> <!-- /widget-header -->
-            
-            <div class="widget-content">
-                <table class="table table-striped table-bordered table-highlight _datatable" id="_datatable">
-                    <thead>
-                            <tr style="text-align: centre;">
-                                    <th>STT</th>
-                                    <th>Tên đăng nhập</th>
-                                    <th>Tên đầy đủ</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Giới tính</th>
-                                    <th>Nhóm người dùng</th>
-                                    <th>Hành động</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                                $i=0;
-                                foreach ($model as $item) {
-                                    $i++;
-                                    ?>
-                            <tr>
-                                <td>
-                                    <?=$i?>
-                                </td>
-                                <td>
-                                  <?=CHtml::link($item->username, array("user/view", 'id'=>$item->id))?>
-                                </td>
-                                <td>
-                                  <?=$item->profile->full_name?>  
-                                </td>
-                                <td>
-                                  <?=$item->profile->dob?>  
-                                </td>
-                                <td>
-                                  <?=($item->profile->gender == 1)?"nam":"nữ"?>  
-                                </td>
-                                <td>
-                                  <?=$item->group->name?>  
-                                </td>
-                                <td>
-                                <center>
-                                  <?=CHtml::link("Xem", array("user/view", 'id'=>$item->id))?> | 
-                                  <?=CHtml::link("Sửa", array("user/update",'id'=>$item->id));?> | 
-                                  <?=CHtml::link("Xóa", array("user/delete",'id'=>$item->id), array('onClick'=>' return confirm("Bạn có chắc muốn xóa?")'));?>
-                                 </center>
-                                </td>
-                                    
-                            </tr>
-                                <?php
-                                }
-                            ?>
-                            
-                            
-                            
-                        </tbody>
-                </table>
-                <div class="row">
-                    <div class="span6">
-                        <div class="dataTables_info">
-                            Showing 1 to 10 of 57 entries
-                        </div>                        
-                    </div>
-                    <div class="span6">
-                         <div class="dataTables_paginate paging_bootstrap pagination">
+<?php
 
-                            <?php 
-                                        $this->widget('CLinkPager', array(
-                                            'firstPageLabel'=>'Đầu',
-                                            'lastPageLabel'=>'Cuối',
-                                            'nextPageLabel'=>'Tiếp',
-                                            'prevPageLabel'=>'Trước',                
-                                            'header'=>'',
-                                            'pages' => $pages
-                                        )) 
-                                    ?>
-                            </div>                       
-                    </div>                    
-                </div>
-                
-            </div>
-            
-        </div>
-       
-    </div>
-</div>
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//echo "Hello";
+//?>
+
+<?=CHtml::link("Thêm người dùng", array("create"), array('class'=>'btn btn-primary'))?> 
+
+<?php
+//
+//$dataProvider=new CActiveDataProvider('User');
+//
+//$this->widget('zii.widgets.CListView', array(
+//    'dataProvider'=>$model->search(),
+//    'itemView'=>'_view',   // refers to the partial view named '_post'
+//    'sortableAttributes'=>array(
+//        'id',
+//        'username'=>'N',
+//    ),
+//));
+
+
+$dataProvider=new CActiveDataProvider('User',array('pagination'=>array(
+                        'PageSize'=>3,)));
+
+$this->widget('application.extensions.MyGridView', array(
+    'dataProvider'=>$dataProvider,
+    'pager'=>array(
+        'maxButtonCount'=>3,
+        
+        ),
+    'htmlOptions'=>array(
+        'class'=>'table table-striped table-bordered table-highlight _datatable'
+    ),
+    'columns'=>array(  
+        
+        array(
+            'name'=>"#",
+            'value'=>'$row+1',
+            'htmlOptions'=>array('style'=>'width:40px; text-align: center;')
+            ),
+        array (
+            'name' => 'username',  // display the 'name' attribute of the 'category' relation
+            'htmlOptions'=>array('style'=>'width:110px; text-align: left;')
+        ),        
+
+        'profile.full_name',   // display the 'content' attribute as purified HTML
+        'group.name',
+        array (
+            'name'=>'profile.is_active',
+            'value'=>'($data->profile->is_active == 0)? "không":"có"'
+        ),
+        array(            // display 'create_time' using an expression
+            'name'=>'profile.dob',
+            'value'=>'$data->profile->dob',
+        ),       
+        array(            // display a column with "view", "update" and "delete" buttons
+            'class'=>'CButtonColumn',
+        ),
+    ),
+));
+
+?>

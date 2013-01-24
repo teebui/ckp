@@ -185,7 +185,7 @@ class UserController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionList()
+	public function actionIndex()
 	{
             Yii::app()->getClientScript()->registerCoreScript('yii');
 //            $model = User::model()->findAll();
@@ -201,7 +201,7 @@ class UserController extends Controller
             $pages->applyLimit($criteria);
             $model=User::model()->findAll($criteria);
 
-            $this->render('list', array(
+            $this->render('index', array(
                 'model' => $model,
                 'pages' => $pages
             ));
@@ -271,14 +271,14 @@ class UserController extends Controller
 		)); 
         }
         
-        public function actionIndex() {
+        public function actionList() {
             $model=new User('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['User']))
 			$model->attributes=$_GET['User'];
             
             // $model = User::model()->findAll();
-            $this->render('index',array(
+            $this->render('list',array(
                 'model'=> $model,
             ));	
         }
