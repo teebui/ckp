@@ -1,0 +1,15 @@
+/* 
+    Document   : mycss.css
+    Created on : 26-Jan-2013, 11:43:29
+    Author     : Tuan-Anh Bui
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.breadcrumbs a{ font-size: 14px;}
+.breadcrumbs span{font-weight: bold; font-size: 14px;}
+
+input.form_error {border-color: #FF0000; }
+.form_error {
+    color: #FF0000;
+}
