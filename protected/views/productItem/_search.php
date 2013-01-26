@@ -52,6 +52,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'related_video'); ?>
+		<?php echo $form->textField($model,'related_video',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'price'); ?>
 		<?php echo $form->textField($model,'price'); ?>
 	</div>

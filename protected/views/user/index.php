@@ -1,6 +1,6 @@
 <?php $this->pageTitle = "Quản lý người dùng";?>
 <div class="row">
-    <?=CHtml::link("Thêm người dùng", array("create"), array('class'=>'btn btn-primary', 'style'=>'margin-bottom:7px;'))?> 
+    <?php// echo CHtml::link("Thêm người dùng", array("create"), array('class'=>'btn btn-primary', 'style'=>'margin-bottom:7px;'))?> 
     <div class="span12">
         <div class="widget widget-table">
             <div class="widget-header">						
@@ -12,7 +12,8 @@
             </div> <!-- /widget-header -->
             
             <div class="widget-content">
-                <table class="table table-striped table-bordered table-highlight _datatable" id="_datatable">
+                
+                <table class="table table-striped table-bordered table-highlight _datatable">
                     <thead>
                             <tr style="text-align: centre;">
                                     <th>STT</th>

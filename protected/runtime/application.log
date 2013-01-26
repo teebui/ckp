@@ -3916,3 +3916,1052 @@ REQUEST_URI=/ckp/index.php?r=user
 in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\MyGridView.php (13)
 in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\index.php (64)
 in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (283)
+2013/01/25 09:35:18 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.timepicker.EJuiDateTimePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'application.ext...', Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#8 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#22 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:35:52 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.CJuiDateTimePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'application.ext...', Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#8 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#22 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:45:59 [error] [exception.CException] exception 'CException' with message 'Property "User.calev_start" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('calev_start')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('calev_start')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'calev_start')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'calev_start', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(82): CHtml::activeTextField(Object(User), 'calev_start', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#6 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#25 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:46:42 [error] [exception.CException] exception 'CException' with message 'Property "User.profileModel.dob" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('profileModel.do...')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('profileModel.do...')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'profileModel.do...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'profileModel.do...', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(82): CHtml::activeTextField(Object(User), 'profileModel.do...', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#6 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#25 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:47:08 [error] [exception.CException] exception 'CException' with message 'Property "User.profile.dob" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('profile.dob')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('profile.dob')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'profile.dob')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'profile.dob', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(82): CHtml::activeTextField(Object(User), 'profile.dob', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#6 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#25 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:48:16 [error] [exception.CException] exception 'CException' with message 'CJuiDatePicker must specify "model" and "attribute" or "name" property values.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\zii\widgets\jui\CJuiInputWidget.php:52
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(70): CJuiInputWidget->resolveNameID()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(29): CBaseController->widget('application.ext...', Array)
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#7 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#21 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:49:26 [error] [exception.CException] exception 'CException' with message 'Property "User.model.profile.dob" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('model.profile.d...')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('model.profile.d...')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'model.profile.d...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'model.profile.d...', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(82): CHtml::activeTextField(Object(User), 'model.profile.d...', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#6 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(30): CBaseController->widget('application.ext...', Array)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#25 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 09:49:34 [error] [exception.CException] exception 'CException' with message 'Property "User.profile.dob" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('profile.dob')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('profile.dob')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'profile.dob')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(User), 'profile.dob', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\CJuiDatePicker.php(82): CHtml::activeTextField(Object(User), 'profile.dob', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#6 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(30): CBaseController->widget('application.ext...', Array)
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#25 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 12:02:11 [error] [exception.CException] exception 'CException' with message 'Property "User.details" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('details')
+#1 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\views\fCKEditorWidget.php(38): CActiveRecord->__get('details')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(130): require('D:\_WORKPLACE\x...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, false)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CWidget.php(243): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, false)
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\FCKEditorWidget.php(75): CWidget->render('fCKEditorWidget', Array)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): FCKEditorWidget->run()
+#7 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(41): CBaseController->widget('application.ext...', Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#26 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/25 12:02:48 [error] [exception.CException] exception 'CException' with message 'Property "UserProfile.description" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('description')
+#1 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\views\fCKEditorWidget.php(38): CActiveRecord->__get('description')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(130): require('D:\_WORKPLACE\x...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, false)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CWidget.php(243): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, false)
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\FCKEditorWidget.php(75): CWidget->render('fCKEditorWidget', Array)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): FCKEditorWidget->run()
+#7 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(41): CBaseController->widget('application.ext...', Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(121): CController->render('create', Array)
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#24 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#26 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/26 03:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cre\".' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(270): CController->missingAction('cre\')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('cre\')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/cre\')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/ckp/index.php?r=user/cre\
+---
+2013/01/26 03:42:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'luant' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (95)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 03:42:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'luant' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(95): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 03:45:30 [error] [php] include(CGridView.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\MyGridView.php(13): spl_autoload_call()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php(314): require()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWidgetFactory.php(146): import()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(172): UserController->createWidget()
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\list.php(64): UserController->widget()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): UserController->renderFile()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): UserController->renderPartial()
+#10 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(283): UserController->render()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionList()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/list
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\MyGridView.php (13)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\list.php (64)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (283)
+2013/01/26 04:40:33 [error] [php] include(PortalCustomerDomains.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(290): spl_autoload_call()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionUsernameExists()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (290)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 04:40:39 [error] [php] include(PortalCustomerDomains.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(290): spl_autoload_call()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionUsernameExists()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (290)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 04:40:54 [error] [php] include(PortalCustomerDomains.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\_WORKPLACE\xamppdocsroot\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(290): spl_autoload_call()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionUsernameExists()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (290)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 04:45:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:45:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:46:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:49:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:49:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:55:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 04:57:27 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.username" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('username', 'tab87vndsds')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\schema\CDbCommandBuilder.php(483): CDbCriteria->__construct(Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1606): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(293): CActiveRecord->exists(Array)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionUsernameExists()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('usernameExists')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/usernameEx...')
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/ckp/index.php?r=user/usernameExists
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 05:09:54 [error] [php] Missing argument 2 for CWebUser::setFlash(), called in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php on line 108 and defined (D:\_WORKPLACE\xamppdocsroot\yii\framework\web\auth\CWebUser.php:675)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/create
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (108)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 05:10:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'duongdb' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (95)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 05:10:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'duongdb' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(95): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 05:31:11 [error] [exception.CException] exception 'CException' with message 'Property "CBreadcrumbs.htmlOption" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('htmlOption', Array)
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'zii.widgets.CBr...', Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CBr...', Array)
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\layouts\main.php(217): CBaseController->widget('zii.widgets.CBr...', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#7 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(73): CController->render('view', Array)
+#8 [internal function]: UserController->actionView('2')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/ckp/index.php?r=user/view&id=2
+HTTP_REFERER=http://dev/ckp/index.php?r=user
+---
+2013/01/26 10:05:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (95)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:05:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(95): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:18:28 [error] [exception.CException] exception 'CException' with message 'Property "ProductItem.note" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('note')
+#1 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\views\fCKEditorWidget.php(38): CActiveRecord->__get('note')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(130): require('D:\_WORKPLACE\x...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, false)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CWidget.php(243): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, false)
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\extensions\fckeditor\FCKEditorWidget.php(75): CWidget->render('fCKEditorWidget', Array)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(173): FCKEditorWidget->run()
+#7 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\productItem\create.php(34): CBaseController->widget('application.ext...', Array)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\ProductItemController.php(79): CController->render('create', Array)
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): ProductItemController->actionCreate()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('productItem/cre...')
+#24 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#26 {main}
+REQUEST_URI=/ckp/index.php?r=productItem/create
+---
+2013/01/26 10:21:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:21:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:24:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:24:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:25:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:25:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:27:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:27:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:27:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:27:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:35:34 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('password_repeat')
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('password_repeat')
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(User), 'password_repeat')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1391): CHtml::activeInputField('password', Object(User), 'password_repeat', Array)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CActiveForm.php(687): CHtml::activePasswordField(Object(User), 'password_repeat', Array)
+#5 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(125): CActiveForm->passwordField(Object(User), 'password_repeat', Array)
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(123): CController->render('create', Array)
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#24 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+---
+2013/01/26 10:36:24 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1175): tag()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(609): inputField()
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(125): passwordField()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): UserController->renderFile()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): UserController->renderPartial()
+#8 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(123): UserController->render()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/create
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php (125)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (123)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:38:25 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(1175): tag()
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\helpers\CHtml.php(609): inputField()
+#3 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php(125): passwordField()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require()
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(869): UserController->renderFile()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(782): UserController->renderPartial()
+#8 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(123): UserController->render()
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): UserController->run()
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CWebApplication->run()
+REQUEST_URI=/ckp/index.php?r=user/create
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\user\create.php (125)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (123)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:55:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:55:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:55:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:55:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:55:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:55:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 10:56:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php (96)
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 10:56:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tab87vn' for key 'username'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `group_id`) VALUES (:yp0, :yp1, :yp2)' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\UserController.php(96): CActiveRecord->save()
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/ckp/index.php?r=user/create
+HTTP_REFERER=http://dev/ckp/index.php?r=user/create
+---
+2013/01/26 11:20:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testyii.productitem' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `productItem`.
+in D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php (17)
+2013/01/26 11:42:29 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user_profile" does not have a column named "username".' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\layouts\main.php(93): CActiveRecord->findByAttributes(Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#13 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\ProductCategoryController.php(79): CController->render('create', Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): ProductCategoryController->actionCreate()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('productCategory...')
+#25 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#26 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#27 {main}
+REQUEST_URI=/ckp/index.php?r=productCategory/create
+HTTP_REFERER=http://dev/ckp/index.php?r=userGroup/create
+---
+2013/01/26 11:42:32 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user_profile" does not have a column named "username".' in D:\_WORKPLACE\xamppdocsroot\yii\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 D:\_WORKPLACE\xamppdocsroot\yii\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\layouts\main.php(93): CActiveRecord->findByAttributes(Array)
+#2 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#3 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#4 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#5 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#10 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(126): require('D:\_WORKPLACE\x...')
+#11 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\_WORKPLACE\x...', Array, true)
+#12 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\_WORKPLACE\x...', Array, true)
+#13 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\protected\controllers\ProductCategoryController.php(79): CController->render('create', Array)
+#14 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\actions\CInlineAction.php(49): ProductCategoryController->actionCreate()
+#15 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 D:\_WORKPLACE\xamppdocsroot\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('productCategory...')
+#25 D:\_WORKPLACE\xamppdocsroot\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#26 D:\_WORKPLACE\xamppdocsroot\_dev\ckp\index.php(17): CApplication->run()
+#27 {main}
+REQUEST_URI=/ckp/index.php?r=productCategory/create
+---

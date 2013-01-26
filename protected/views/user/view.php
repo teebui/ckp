@@ -3,8 +3,8 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
-	'Users'=>array('index'),
-	$model->id,
+	'Người dùng'=>array('index'),
+	$model->username,
 );
 
 $this->menu=array(
@@ -15,7 +15,22 @@ $this->menu=array(
 	array('label'=>'Manage User', 'url'=>array('admin')),
 );
 ?>
-
+<!--Set flash -->
+<?php if (Yii::app()->user->hasFlash('success')): ?>
+    <div class="alert alert-success">
+        <a class="close" href="#" data-dismiss="alert">×</a>
+        <h4 class="alert-heading">Thao tác hoàn tất</h4>
+        <?php echo Yii::app()->user->getFlash('success') ?>
+    </div>
+<?php endif ?>
+<?php if (Yii::app()->user->hasFlash('error')): ?>
+    <div class="alert alert-error">
+        <a class="close" href="#" data-dismiss="alert">×</a>
+        <h4 class="alert-heading">Thất bại</h4>
+        <?php echo Yii::app()->user->getFlash('error') ?>
+    </div>
+<?php endif ?>
+<!--end set flash-->
 <h3>Thông tin chi tiết người dùng <?php echo $model->username; ?></h3>
 <br />
 

@@ -58,6 +58,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'related_video'); ?>
+		<?php echo $form->textField($model,'related_video',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'related_video'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'price'); ?>
 		<?php echo $form->textField($model,'price'); ?>
 		<?php echo $form->error($model,'price'); ?>
@@ -76,13 +82,37 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'created_dt'); ?>
+		<?php echo $form->textField($model,'created_dt'); ?>
+		<?php echo $form->error($model,'created_dt'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'last_modified_dt'); ?>
+		<?php echo $form->textField($model,'last_modified_dt'); ?>
+		<?php echo $form->error($model,'last_modified_dt'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'created_user_id'); ?>
+		<?php echo $form->textField($model,'created_user_id'); ?>
+		<?php echo $form->error($model,'created_user_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'last_modified_user_id'); ?>
+		<?php echo $form->textField($model,'last_modified_user_id'); ?>
+		<?php echo $form->error($model,'last_modified_user_id'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'is_active'); ?>
 		<?php echo $form->textField($model,'is_active'); ?>
 		<?php echo $form->error($model,'is_active'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Cập nhật'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

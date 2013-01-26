@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Product Items'=>array('index'),
-	'Create',
+	'Thêm sản phẩm',
 );
 
 $this->menu=array(

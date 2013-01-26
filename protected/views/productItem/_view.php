@@ -38,6 +38,10 @@
 	<?php echo CHtml::encode($data->related_url); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('related_video')); ?>:</b>
+	<?php echo CHtml::encode($data->related_video); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
 	<?php echo CHtml::encode($data->price); ?>
 	<br />

@@ -29,6 +29,7 @@ $this->menu=array(
 		'brief',
 		'description',
 		'related_url',
+		'related_video',
 		'price',
 		'unit',
 		'quantity',

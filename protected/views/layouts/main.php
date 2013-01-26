@@ -23,7 +23,7 @@
 
 
 <!-- Javascript -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/jquery-1.7.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/jquery-ui-1.8.21.custom.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/jquery.ui.touch-punch.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/bootstrap.js"></script>
@@ -35,8 +35,8 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/plugins/flot/jquery.flot.orderBars.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/plugins/flot/jquery.flot.pie.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/plugins/flot/jquery.flot.resize.js"></script>
-
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/demos/charts/bar.js"></script>
+<!--
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/demos/charts/bar.js"></script>-->
 
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/plugins/datatables/jquery.dataTables.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/plugins/datatables/DT_bootstrap.js"></script>
@@ -44,10 +44,18 @@
 
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/js/test.js"></script>
 
+
+
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="../../../html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+
+<!---- CUSTOM JS & CSS -->
+<link href="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/_mystyle/mycss.css" rel="stylesheet">
+<!---- CUSTOM JS & CSS -->
+
 
 </head>
 
@@ -58,7 +66,7 @@
 	
 	<div class="container">			
 		
-		<h1><a href="default.htm">Slate Admin 2.0</a></h1>			
+                    <h1><?=CHtml::link("CKP", array("site/index"))?>'></h1>			
 		
 		<div id="info">				
 			
@@ -81,7 +89,11 @@
 				
 				<div class="info-avatar">
 					
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/img/avatar.jpg" alt="avatar">
+<!--					<img src="<?php echo Yii::app()->request->baseUrl; ?>/themes/slate/img/avatar.jpg" alt="avatar">-->
+                                    <?php $model = User::model()->findByAttributes(array('username'=>$_SESSION['nc_usn']));
+                                        $avatar = ($model->profile->avatar == "")?"default.jpg" : $model->profile->avatar;
+                                    ?>
+                                    <img src="<?php echo MY_AVATAR_DIR.$avatar;?>" alt="avatar">
 					
 				</div> <!-- /.info-avatar -->
 				
@@ -107,7 +119,7 @@
 			<ul class="nav">
 		
 				<li class="nav-icon active">
-					<a href="default.htm">
+					<a href='<?=$this->createUrl("site/index")?>'>
 						<i class="icon-home"></i>
 						<span>Home</span>
 					</a>	    				
@@ -121,14 +133,46 @@
 					</a>	
 				
 					<ul class="dropdown-menu">
-                                            <li><a href="<?php echo $this->createUrl("user/"); ?>">
-                                                Người dùng</a></li>
-                                            <li><a href="<?php echo $this->createUrl("userGroup/"); ?>">
-                                                Nhóm người dùng</a></li>
-                                            <li><a href="<?php echo $this->createUrl("productItem/"); ?>">
-                                                Sản phẩm</a></li>
-                                            <li><a href="<?php echo $this->createUrl("productCategory/"); ?>">
-                                                Danh mục sản phẩm</a></li>                                                
+                                            <li class="dropdown"><a href="<?php echo $this->createUrl("user/"); ?>">
+                                                Người dùng
+                                                <i class="icon-chevron-right sub-menu-caret"></i>
+                                                </a>
+                                                
+                                            <ul class="dropdown-menu sub-menu">
+                                                <li><a href="<?php echo $this->createUrl("user/create"); ?>">
+                                                Thêm người dùng</a></li>
+                                                
+                                            </ul>
+                                            
+                                            </li>
+                                            <li class="dropdown"><a href="<?php echo $this->createUrl("userGroup/"); ?>">
+                                                Nhóm người dùng
+                                                <i class="icon-chevron-right sub-menu-caret"></i>
+                                                </a>
+                                                <ul class="dropdown-menu sub-menu">
+                                                <li><a href="<?php echo $this->createUrl("userGroup/create"); ?>">
+                                                Thêm nhóm người dùng</a></li>
+                                                
+                                                </ul>                                            
+                                            </li>
+                                            <li class="dropdown"><a href="<?php echo $this->createUrl("productItem/"); ?>">
+                                                Sản phẩm<i class="icon-chevron-right sub-menu-caret"></i></a>
+                                            
+                                                <ul class="dropdown-menu sub-menu">
+                                                    <li><a href="<?php echo $this->createUrl("productItem/create"); ?>">
+                                                    Thêm sản phẩm</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="<?php echo $this->createUrl("productCategory/"); ?>">
+                                                Danh mục sản phẩm<i class="icon-chevron-right sub-menu-caret"></i></a>
+                                            
+                                                <ul class="dropdown-menu sub-menu">
+                                                    <li><a href="<?php echo $this->createUrl("productCategory/create"); ?>">
+                                                    Thêm danh mục sản phẩm</a></li>
+
+                                                </ul>
+                                            </li>                                                
 					</ul>    				
 				</li>
 				
@@ -203,6 +247,16 @@
 <div id="content">
 		
 	<div class="container">
+           
+            <div id="page-title" class="clearfix">			
+                 <?php
+                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'homeLink' => CHtml::link('Trang chủ', Yii::app()->homeUrl),
+                        'links'=>$this->breadcrumbs,
+                        'separator'=> " / ",
+                    ));
+                    ?>
+            </div> <!-- /.page-title -->
             <?php echo $content; ?>
 	</div> <!-- /.container -->
 	

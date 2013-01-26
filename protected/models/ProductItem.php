@@ -12,6 +12,7 @@
  * @property string $brief
  * @property string $description
  * @property string $related_url
+ * @property string $related_video
  * @property integer $price
  * @property string $unit
  * @property integer $quantity
@@ -49,13 +50,14 @@ class ProductItem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			//array('name, code, brief, description, related_url, created_dt, last_modified_dt, created_user_id, last_modified_user_id', 'required'),
+			array('name, code, brief', 'required'),
 			array('category_id, price, quantity, created_user_id, last_modified_user_id, is_active', 'numerical', 'integerOnly'=>true),
-			array('name, image, related_url', 'length', 'max'=>255),
+			array('name, image, related_url, related_video', 'length', 'max'=>255),
 			array('code, unit', 'length', 'max'=>100),
+			array('description, created_dt, last_modified_dt', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, category_id, name, code, image, brief, description, related_url, price, unit, quantity, created_dt, last_modified_dt, created_user_id, last_modified_user_id, is_active', 'safe', 'on'=>'search'),
+			array('id, category_id, name, code, image, brief, description, related_url, related_video, price, unit, quantity, created_dt, last_modified_dt, created_user_id, last_modified_user_id, is_active', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -75,24 +77,25 @@ class ProductItem extends CActiveRecord
 	 */
 	public function attributeLabels()
 	{
-            return array(
-                'id' => 'ID',
-                'category_id' => 'Nhóm sản phẩm',
-                'name' => 'Tên sản phẩm',
-                'code' => 'Mã',
-                'image' => 'Hình ảnh',
-                'brief' => 'Giới thiệu',
-                'description' => 'Thông tin chi tiết',
-                'related_url' => 'Đường dẫn liên quan',
-                'price' => 'Giá',
-                'unit' => 'Đơn vị',
-                'quantity' => 'Số lượng',
-                'created_dt' => 'Ngày khởi tạo',
-                'last_modified_dt' => 'Sửa lần cuối',
-                'created_user_id' => 'Người khởi tạo',
-                'last_modified_user_id' => 'Người sửa lần cuối',
-                'is_active' => 'Trạng thái',
-            );
+		return array(
+                    'id' => 'ID',
+                    'category_id' => 'Nhóm sản phẩm',
+                    'name' => 'Tên sản phẩm',
+                    'code' => 'Mã',
+                    'image' => 'Hình ảnh',
+                    'brief' => 'Giới thiệu',
+                    'description' => 'Thông tin chi tiết',
+                    'related_url' => 'Đường dẫn liên quan',
+                    'related_video' => 'Video liên quan',
+                    'price' => 'Giá',
+                    'unit' => 'Đơn vị',
+                    'quantity' => 'Số lượng',
+                    'created_dt' => 'Ngày khởi tạo',
+                    'last_modified_dt' => 'Sửa lần cuối',
+                    'created_user_id' => 'Người khởi tạo',
+                    'last_modified_user_id' => 'Người sửa lần cuối',
+                    'is_active' => 'Trạng thái',    
+		);
 	}
 
 	/**
@@ -114,6 +117,7 @@ class ProductItem extends CActiveRecord
 		$criteria->compare('brief',$this->brief,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('related_url',$this->related_url,true);
+		$criteria->compare('related_video',$this->related_video,true);
 		$criteria->compare('price',$this->price);
 		$criteria->compare('unit',$this->unit,true);
 		$criteria->compare('quantity',$this->quantity);
@@ -128,7 +132,7 @@ class ProductItem extends CActiveRecord
 		));
 	}
         
-        	 protected function afterFind() {
+        protected function afterFind() {
 
             foreach ($this->metadata->tableSchema->columns as $columnName => $column) {
 
@@ -143,28 +147,30 @@ class ProductItem extends CActiveRecord
 		
 		
 	protected function beforeSave() {
-        if (parent::beforeSave()) {
-            // save datetime 
-            foreach ($this->metadata->tableSchema->columns as $columnName => $column) {
+            if (parent::beforeSave()) {
+                // save datetime 
+                foreach ($this->metadata->tableSchema->columns as $columnName => $column) {
 
-                if (!strlen($this->$columnName))
-                    continue;
-                if ($column->dbType == 'date' || $column->dbType == 'datetime') {
-                    $this->$columnName = date('Y-m-d', strtotime($this->$columnName));
+                    if (!strlen($this->$columnName))
+                        continue;
+                    if ($column->dbType == 'date' || $column->dbType == 'datetime') {
+                        $this->$columnName = date('Y-m-d', strtotime($this->$columnName));
+                    }
                 }
+                //end datetime
+                $today = date("Y-m-d");
+                if ($this->isNewRecord) {
+                    $this->created_dt = $this->last_modified_dt = $today;
+                    $this->created_user_id = $this->last_modified_user_id = $_SESSION['nc_usn']; //current login user
+                } else {
+                    $this->last_modified_date = $today;
+                    $this->last_modified_user = SAuthentication::getIdentityID();
+                }
+                return true;
             }
-            //end datetime
-            $today = date("Y-m-d");
-            if ($this->isNewRecord) {
-                $this->created_dt = $this->last_modified_dt = $today;
-                $this->created_user_id = $this->last_modified_user_id = $_SESSION['nc_usn']; //current login user
-            } else {
-                $this->last_modified_date = $today;
-                $this->last_modified_user = SAuthentication::getIdentityID();
-            }
-            return true;
+            else
+                return false;
         }
-        else
-            return false;
-    }
+        
+        
 }

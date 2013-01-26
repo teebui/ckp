@@ -79,6 +79,7 @@ class UserController extends Controller
 	 */
 	public function actionCreate()
 	{
+            Yii::app()->getClientScript()->registerCoreScript('yii');
             $this->pageTitle = Yii::app()->name." :: Thêm người dùng mới";
 		$model=new User;
                 $profileModel = new UserProfile;                
@@ -92,26 +93,27 @@ class UserController extends Controller
 		{
                     $model->attributes=$_POST['User'];
                     $model->password = md5($_POST['User']['password']);
-                    if($model->save()) {
-                        $profileModel->user_id = $model->id;
-                        $profileModel->attributes = $_POST['UserProfile'];
-                        $avatar = CUploadedFile::getInstance($profileModel, 'avatar');
-                        //var_dump($avatar);                  
-                        if (is_object($avatar) && (get_class($avatar)==='CUploadedFile')) {
-                            $ext = substr($avatar->getName(),strrpos($avatar->getName(), '.', 0)+1);
-                            $savedName = md5($model->id."-".$model->username).".".$ext;
-                            $savedLocation = MY_AVATAR_DIR.$savedName;
-                            $avatar->saveAs($savedLocation);
-                            $profileModel->avatar = $savedName;    
-                        }                        
-                        if ($profileModel->save()) {
-                            $this->redirect(array('view','id'=>$model->id));  
-                        }
-                        else {
-                            $model->delete();
-                            //$this->redirect(array('create'));  
-                        }                            
-                    }                    
+////                    if($model->save()) {
+////                        $profileModel->user_id = $model->id;
+////                        $profileModel->attributes = $_POST['UserProfile'];
+////                        $avatar = CUploadedFile::getInstance($profileModel, 'avatar');
+////                        //var_dump($avatar);                  
+//////                        if (is_object($avatar) && (get_class($avatar)==='CUploadedFile')) {
+//////                            $ext = substr($avatar->getName(),strrpos($avatar->getName(), '.', 0)+1);
+//////                            $savedName = md5($model->id."-".$model->username).".".$ext;
+//////                            $savedLocation = MY_AVATAR_DIR.$savedName;
+//////                            $avatar->saveAs($savedLocation);
+//////                            $profileModel->avatar = $savedName;    
+//////                        }                        
+//////                        if ($profileModel->save()) {
+//////                            Yii::app()->user->setFlash("success","Thêm mới thành công");
+//////                            $this->redirect(array('view','id'=>$model->id));  
+//////                        }
+//////                        else {
+//////                            $model->delete();
+//////                            //$this->redirect(array('create'));  
+////                        }                            
+//                    }                    
 		}               
 
 		$this->render('create',array(
@@ -281,5 +283,25 @@ class UserController extends Controller
             $this->render('list',array(
                 'model'=> $model,
             ));	
+        }
+        
+        public function actionUsernameExists() {
+            if(isset($_POST['username']))
+            {
+                $username = trim($_POST['username']);
+//                $data_hostname = PortalCustomerDomains::model()->findByAttributes(array('customer_id'=>$this->customer_id));
+//                $account_name = '$'.$data_hostname->hostname.'$'.$account;
+//                $model = PortalCustomerAccounts::model()->findByAttributes(array('account_name'=>$account_name));
+//                return $exists = User::model()->exists("username = '".$username."'");
+                $model = User::model()->findByAttributes(array('username'=>$username));
+                if(count($model)>0)
+                {
+                    echo "1";
+                }
+                else
+                {
+                    echo "0";
+                }
+            }
         }
 }

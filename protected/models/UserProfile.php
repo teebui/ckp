@@ -133,6 +133,8 @@ class UserProfile extends CActiveRecord
                     if (!strlen($this->$columnName))
                         continue;
                     if ($column->dbType == 'date' || $column->dbType == 'datetime') {
+//                        $dates = explode("/", $this->$columnName);
+//                        $this->$columnName = str_replace("/", "-", $this->$columnName);
                         $this->$columnName = date('Y-m-d', strtotime($this->$columnName));
                     }
                 }

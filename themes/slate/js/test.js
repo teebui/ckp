@@ -2,17 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-$(function () {
-	
-
-	$('#_datatable').dataTable( {
+jQuery(document).ready ( function () 
+{
+    jQuery('._datatable').dataTable( {
 		sDom: "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
 		sPaginationType: "bootstrap",
 		oLanguage: {
 			"sLengthMenu": "_MENU_ records per page"
 		}
 	});
-	
 });

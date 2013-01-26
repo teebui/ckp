@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Product Items',
+	'Sản phẩm',
 );
 
 $this->menu=array(
